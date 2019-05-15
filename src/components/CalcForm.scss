@@ -1,0 +1,16 @@
+@import "utilities/variables";
+
+.CalcForm {
+    margin:  0 30%;
+  padding: 20px;
+  ul {
+    list-style: none;
+  }
+  Select {
+      color: $grey-darkest
+  }
+  
+  label {
+      padding-top: 10px;
+  }
+}
