@@ -16,15 +16,18 @@
   label {
     padding-top: 0.5rem;
   }
-
-  &__response {
-    margin: 0.5rem 2rem;
-    table {
-      width: 100%;
-    }
-    td,
-    th {
-      padding: 0.2rem;
-    }
+  table {
+    margin: 1rem 0rem;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  td {
+    padding: 0.2rem;
+  }
+  th {
+    padding: 0.2rem;
+    background-color: $grey-light
   }
 }
