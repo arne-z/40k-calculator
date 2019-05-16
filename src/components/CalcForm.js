@@ -13,6 +13,7 @@ const targets = [
 ]
 
 function calcRerollDice(requiredRoll, numRolled, reroll) {
+  if (requiredRoll === 1) { return numRolled }
   let chanceToFail = null
   if (reroll === 'ones') {
     let firstRollMiss = pDiceLessThan(requiredRoll)
@@ -20,7 +21,7 @@ function calcRerollDice(requiredRoll, numRolled, reroll) {
     let secondRollHit = missWasOne * pDiceGreaterEqual(requiredRoll)
     chanceToFail = firstRollMiss - secondRollHit
   } else if (reroll === 'all') {
-    chanceToFail = Math.pow(pDiceGreaterEqual(requiredRoll), 2)
+    chanceToFail = Math.pow(pDiceLessThan(requiredRoll), 2)
   }
   else {
     chanceToFail = pDiceLessThan(requiredRoll)
