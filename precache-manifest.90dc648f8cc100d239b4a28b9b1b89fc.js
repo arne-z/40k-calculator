@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dad487ae6867d98c5bc0acdc8b2d4cce",
+    "revision": "ffd9e03e801bde5b43b6cc7ec5116b4a",
     "url": "/40k-calculator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/40k-calculator/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "dd4dd97c9f1bcf9fa171",
+    "revision": "df0910450af68f668abc",
     "url": "/40k-calculator/static/css/main.bfb75a0a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/40k-calculator/static/js/2.01ee40f9.chunk.js"
   },
   {
-    "revision": "dd4dd97c9f1bcf9fa171",
-    "url": "/40k-calculator/static/js/main.9a77a87e.chunk.js"
+    "revision": "df0910450af68f668abc",
+    "url": "/40k-calculator/static/js/main.a957acf8.chunk.js"
   },
   {
     "revision": "78f9cb107fb96a3c76e7",
