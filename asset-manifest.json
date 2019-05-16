@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/40k-calculator/static/css/main.53e3908f.chunk.css",
-    "main.js": "/40k-calculator/static/js/main.97a6667b.chunk.js",
-    "main.js.map": "/40k-calculator/static/js/main.97a6667b.chunk.js.map",
+    "main.js": "/40k-calculator/static/js/main.c16e8a41.chunk.js",
+    "main.js.map": "/40k-calculator/static/js/main.c16e8a41.chunk.js.map",
     "runtime~main.js": "/40k-calculator/static/js/runtime~main.88df7287.js",
     "runtime~main.js.map": "/40k-calculator/static/js/runtime~main.88df7287.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/40k-calculator/static/css/2.22a7d4ef.chunk.css",
     "static/js/2.01ee40f9.chunk.js": "/40k-calculator/static/js/2.01ee40f9.chunk.js",
     "static/js/2.01ee40f9.chunk.js.map": "/40k-calculator/static/js/2.01ee40f9.chunk.js.map",
     "index.html": "/40k-calculator/index.html",
-    "precache-manifest.5bd4e5fa892ec33584f88688d35304bd.js": "/40k-calculator/precache-manifest.5bd4e5fa892ec33584f88688d35304bd.js",
+    "precache-manifest.b64dead6977e3cae9fbccd4fa4698cd0.js": "/40k-calculator/precache-manifest.b64dead6977e3cae9fbccd4fa4698cd0.js",
     "service-worker.js": "/40k-calculator/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/40k-calculator/static/css/2.22a7d4ef.chunk.css.map",
     "static/css/main.53e3908f.chunk.css.map": "/40k-calculator/static/css/main.53e3908f.chunk.css.map"
