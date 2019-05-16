@@ -56,7 +56,7 @@ function getAverageDamage(attackConfig, targetConfig) {
   const modelsLost = woundsLost / hp
 
 
-  return `Average Damge Caused to ${name}: ${woundsLost.toFixed(2)} wounds caused which kills ${modelsLost.toFixed(2)} models.`
+  return `Average damage caused to ${name}: ${woundsLost.toFixed(2)} wounds caused which kills ${modelsLost.toFixed(2)} models.`
 }
 
 function getResults(attackConfig) {
