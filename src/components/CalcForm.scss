@@ -1,33 +1,48 @@
 @import "utilities/variables";
 
 .CalcForm {
-  margin: 0 auto;
-  padding: 0.5rem;
+  margin: 1rem auto;
   max-width: 650px;
 
-  ul {
-    list-style: none;
-  }
-
   select {
+    margin-bottom: 0.5rem;
     color: $grey-darkest;
   }
 
   label {
-    padding-top: 0.5rem;
+    display: flex;
+
+    span {
+      display: block;
+      flex: 1 1 auto;
+      background: $grey-light;
+      border-radius: 0.25rem 0 0 0.25rem;
+      padding: 0.375rem 0.75rem;
+    }
+    select,
+    input {
+      border: 1px solid $grey-light;
+      border-radius: 0 0.25rem 0.25rem 0;
+      flex: 0 1 auto;
+      height: inherit;
+      width: 70%;
+    }
   }
+
   table {
     margin: 1rem 0rem;
     width: 100%;
-    background-color: #fff;
-    border: 1px solid #ced4da;
+    background-color: white;
+    border: 1px solid $grey-light;
     border-radius: 0.25rem;
-  }
-  td {
-    padding: 0.2rem;
-  }
-  th {
-    padding: 0.2rem;
-    background-color: $grey-light
+
+    td {
+      padding: 0.2rem;
+    }
+
+    th {
+      padding: 0.2rem;
+      background-color: $grey-light;
+    }
   }
 }

@@ -122,55 +122,62 @@ function getResults(formState) {
   );
 }
 
+function LabeledInputField(props) {
+  const { label, placeholder, fieldName } = props;
+  return (
+    <div>
+      <label>
+        <span>
+          {label}
+        </span>
+        <Text className="form-control" type="number" field={fieldName} tabIndex="1" placeholder={placeholder} />
+      </label>
+    </div>
+  )
+}
+
 function CalcForm() {
   return (
     <Form>
       {({ formState }) => (
         <div className="form-group CalcForm">
+          <LabeledInputField label="Attacks/Shots:" placeholder="Number of attacks or shots" fieldName="attacks" />
+          <LabeledInputField label="To-Hit:" placeholder="Roll required to hit" fieldName="tohit" />
           <div>
-            <label>Attacks/Shots:</label><Text className="form-control" type="number" field="attacks" tabIndex="1" placeholder="Number of Attacks/Shots" />
-          </div>
-          <div>
-            <label>To-Hit:</label><Text className="form-control" field="tohit" type="number" tabIndex="2" placeholder="Roll Required to Hit" />
-            <div>
-              <Select className="form-control" field="rerollHit">
-                <Option value="none" >Don't reroll hit rolls</Option>
-                <Option value="ones">Re-roll ones only</Option>
-                <Option value="all">Re-roll all failed</Option>
-              </Select>
-            </div>
-          </div>
-          <div>
-            <label>Strength:</label><Text className="form-control" field="strength" type="number" tabIndex="3" placeholder="Strength of the Weapon" />
-            <div>
-              <Select className="form-control" field="rerollWound">
-                <Option value="none" >Don't re-roll wound rolls</Option>
-                <Option value="ones">Re-roll ones only</Option>
-                <Option value="all">Re-roll all failed</Option>
-              </Select>
-            </div>
-          </div>
-          <div>
-            <label>AP:</label><Text className="form-control" field="ap" type="number" tabIndex="4" placeholder="Armor Piercing value of the Weapon" />
-          </div>
-          <div>
-            <label>Damage:</label><Text className="form-control" field="damage" type="number" tabIndex="5" placeholder="Damage of the Weapon" />
-          </div>
-          <div>
-            <label>Target:</label><p />
-            <Select
-              className="form-control"
-              field="enemies"
-              id="select-enemies"
-              multiple>
-              <Option value="GEQ">GEQ - Guardsmen Equivalent</Option>
-              <Option value="MEQ">MEQ - Space Marine Equivalent</Option>
-              <Option value="TEQ">TEQ - Terminator Equivalent</Option>
-              <Option value="Ork">Ork - Ork Boyz</Option>
-              <Option value="Tank">Tank - Leman Russ Equivalent</Option>
-              <Option value="Knight">Knight - Imperial Knight Questoris</Option>
+            <Select className="form-control" field="rerollHit">
+              <Option value="none" >Don't reroll hit rolls</Option>
+              <Option value="ones">Re-roll ones only</Option>
+              <Option value="all">Re-roll all failed</Option>
             </Select>
           </div>
+          <LabeledInputField label="Strength:" placeholder="Strength of the weapon" fieldName="strength" />
+          <Select className="form-control" field="rerollWound">
+            <Option value="none" >Don't re-roll wound rolls</Option>
+            <Option value="ones">Re-roll ones only</Option>
+            <Option value="all">Re-roll all failed</Option>
+          </Select>
+          <LabeledInputField label="AP:" placeholder="Armor piercing value of the weapon" fieldName="ap" />
+          <LabeledInputField label="Damage:" placeholder="Damage of the weapon" fieldName="damage" />
+          <div>
+            <label>
+              <span>
+                Target:
+              </span>
+              <Select
+                className="form-control"
+                field="enemies"
+                id="select-enemies"
+                multiple>
+                <Option value="GEQ">GEQ - Guardsmen Equivalent</Option>
+                <Option value="MEQ">MEQ - Space Marine Equivalent</Option>
+                <Option value="TEQ">TEQ - Terminator Equivalent</Option>
+                <Option value="Ork">Ork - Ork Boyz</Option>
+                <Option value="Tank">Tank - Leman Russ Equivalent</Option>
+                <Option value="Knight">Knight - Imperial Knight Questoris</Option>
+              </Select>
+            </label>
+          </div>
+
           <div>
             {getResults(formState)}
           </div>
