@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/40k-calculator/precache-manifest.b64dead6977e3cae9fbccd4fa4698cd0.js"
+  "/40k-calculator/precache-manifest.9b7765cfebc2ee9b36e827f0835f356a.js"
 );
 
 self.addEventListener('message', (event) => {
